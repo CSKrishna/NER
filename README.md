@@ -1,5 +1,5 @@
 # NLP_NER
-Java code for a trigram maximum entropy markov model (MEMM) for named entity recognition (NER).
+Java code for a trigram Maximum Entropy Markov model (MEMM) for Named Entity Recognition (NER).
 
 This extends the base code for NER based on the MEMM model by Stanford's Prof Jurafsky and Prof Manning.
 
