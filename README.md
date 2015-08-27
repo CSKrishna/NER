@@ -1,7 +1,7 @@
 # NLP_NER
 Java code for a trigram maximum entropy markov model (MEMM) for named entity recognition (NER).
 
-This extends the base code for the assignment set on NER for the Stanford course on Natural Language Processing by by Prof Jurafsky and Prof Manning.
+This extends the base code for NER based on the MEMM model by Stanford's Prof Jurafsky and Prof Manning.
 
 The base code has been taken from  http://www.mohamedaly.info/teaching/cmp-462-spring-2013. The base code only allows for the features to be conditioned on the previous word's label. This has been extended to allow for the label to be guessed to be conditioned on the previous two labels in addition to the usual context - all the other words and their observables featues including their positions in the sequence.
 
@@ -21,6 +21,6 @@ We note that the trigram model increases the F1 score to 0.68 from 0.63 by addin
 features.add("word=" + current_word + ", prevLabel=" + prev_label + ", prevprevLabel=" + prev_prev_label);
 
 to the base feature set:
-		 features.add("word=" + current_word);
-	   features.add("prevLabel=" + prev_label);
-	   features.add("word=" + current_word + ", prevLabel=" + prev_label);
+       	features.add("word=" + current_word);
+	features.add("prevLabel=" + prev_label);
+	features.add("word=" + current_word + ", prevLabel=" + prev_label);
