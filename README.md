@@ -3,7 +3,7 @@ Java code for a trigram Maximum Entropy Markov model (MEMM) for Named Entity Rec
 
 This extends the base code for NER based on the MEMM model by Stanford's Prof Jurafsky and Prof Manning.
 
-The base code has been taken from  http://www.mohamedaly.info/teaching/cmp-462-spring-2013. The base code only allows for the features to be conditioned on the previous word's label. This has been extended to allow for the label to be guessed to be conditioned on the previous two labels in addition to the usual context - all the other words and their observables featues including their positions in the sequence.
+The base code has been taken from  [here](http://www.mohamedaly.info/teaching/cmp-462-spring-2013). The base code only allows for the features to be conditioned on the previous word's label. This has been extended to allow for the label to be guessed to be conditioned on the previous two labels in addition to the usual context - all the other words and their observables featues including their positions in the sequence.
 
 So we can now add featues such as:
 features.add("word=" + current_word + ", prevLabel=" + prev_label + ", prevprevLabel=" + prev_prev_label);
